@@ -36,11 +36,16 @@ Here is the default configuration and an explanation of available options:
 
 ```yaml
 enabled: true
+iframely_enabled: true|false
+iframely_baseurl: URL of hosted iframely or paid version.
 ```
 
 Note that if you use the admin plugin, a file with your configuration, and named embed-privacy.yaml will be saved in the `user/config/plugins/` folder once the configuration is saved in the admin.
 
 ## Usage
+
+Configure a iframely base URL, ie. host it yourself or go for the paid version. 
+See https://iframely.com/ for more information.
 
 Add content you'd like to only show when the user clicks on it like so:
 
@@ -51,6 +56,15 @@ Add content you'd like to only show when the user clicks on it like so:
 
 {{ embedprivacy("https://vimeo.com/76979871") }}
 ```
+
+This is how it'll look in the frontend:
+
+![](https://github.com/pquerner/grav-plugin-embed-privacy/blob/master/assets/screenshots/1.png?raw=true)
+
+After the user clicks on it, the content will be loaded.
+
+![](https://github.com/pquerner/grav-plugin-embed-privacy/blob/master/assets/screenshots/2.png?raw=true)
+
 
 ## Credits
 
