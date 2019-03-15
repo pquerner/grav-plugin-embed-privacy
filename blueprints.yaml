@@ -1,0 +1,43 @@
+name: Embed Privacy
+version: 0.1.0
+description: Hides embedded content until user activly clicks on. Useful to embed 3rd party sited like Twitter.
+icon: plug
+author:
+  name: Pascal Querner
+  email: blog@paskl.de
+homepage: https://github.com/pquerner/grav-plugin-embed-privacy
+keywords: grav, plugin, etc
+bugs: https://github.com/pquerner/grav-plugin-embed-privacy/issues
+docs: https://github.com/pquerner/grav-plugin-embed-privacy/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    iframely_enabled:
+        type: toggle
+        label: PLUGIN_EMBED_PRIVACY.ENABLE_IFRAMELY
+        highlight: 1
+        default: 1
+        options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+        validate:
+            type: bool
+    iframely_baseurl:
+        type: text
+        label: PLUGIN_EMBED_PRIVACY.IFRAMELY_BASEURL
+        highlight: 1
+        default:
+        validate:
+            type: text

@@ -1,0 +1,4 @@
+en:
+  PLUGIN_EMBED_PRIVACY:
+      ENABLE_IFRAMELY: Use service iframely?
+      IFRAMELY_BASEURL: iframely baseURL

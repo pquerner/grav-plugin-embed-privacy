@@ -1,0 +1,32 @@
+.embed-container {
+    margin-bottom: 1.5em;
+}
+
+.embed-overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ddd;
+    cursor: pointer;
+    display: table;
+    max-width: 100%;
+    padding: 20px;
+    width: 700px;
+    height: 300px;
+    transition: background-color .25s ease-in-out, color .25s ease-in-out;
+}
+
+.embed-overlay > h3 {
+    color: #ddd;
+    display: table-cell;
+    text-align: center;
+    transition: color .25s ease-in-out;
+    vertical-align: middle;
+}
+
+.embed-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.embed-overlay:hover > h3 {
+    color: #fff;
+}
